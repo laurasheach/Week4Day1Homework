@@ -17,12 +17,12 @@ class TestRockPaperScissors < MiniTest::Test
   end
 
   def test_rock_wins
-    assert_equal("Rock Wins!", @game1.game_result())
-    assert_equal("Scissors Wins!", @game2.game_result())
-    assert_equal("Paper Wins!", @game3.game_result())
-    assert_equal("Paper Wins!", @game4.game_result())
-    assert_equal("Rock Wins!", @game5.game_result())
-    assert_equal("Scissors Wins!", @game6.game_result())
+    assert_equal("Player 1 wins by playing Rock!", @game1.game_result())
+    assert_equal("Player 1 wins by playing Scissors!", @game2.game_result())
+    assert_equal("Player 1 wins by playing Paper!", @game3.game_result())
+    assert_equal("Player 2 wins by playing Paper!", @game4.game_result())
+    assert_equal("Player 2 wins by playing Rock!", @game5.game_result())
+    assert_equal("Player 2 wins by playing Scissors!", @game6.game_result())
   end
 
 

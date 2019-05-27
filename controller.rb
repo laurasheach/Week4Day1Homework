@@ -8,6 +8,10 @@ also_reload('./models/*')
 #   return "#{game.game_result()}"
 # end
 
+get '/' do
+  erb( :home )
+end
+
 get '/game/:item1/:item2' do
   game = RockPaperScissors.new(params[:item1], params[:item2])
   @game_result = game.game_result()

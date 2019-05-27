@@ -10,17 +10,17 @@ class RockPaperScissors
   def game_result
     result = case
     when @item1 == "rock" && @item2 == "scissors"
-      "Rock Wins!"
+      "Player 1 wins by playing Rock!"
     when @item1 == "scissors" && @item2 == "paper"
-      "Scissors Wins!"
+      "Player 1 wins by playing Scissors!"
     when @item1 == "paper" && @item2 == "rock"
-      "Paper Wins!"
+      "Player 1 wins by playing Paper!"
     when @item1 == "rock" && @item2 == "paper"
-      "Paper Wins!"
+      "Player 2 wins by playing Paper!"
     when @item1 == "scissors" && @item2 == "rock"
-      "Rock Wins!"
+      "Player 2 wins by playing Rock!"
     when @item1 == "paper" && @item2 == "scissors"
-      "Scissors Wins!"
+      "Player 2 wins by playing Scissors!"
     end
     return result
   end
